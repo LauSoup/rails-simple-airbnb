@@ -75,6 +75,21 @@ $red: #fc5185;
   grid-gap: 16px;
 }
 
+.show-head {
+  display: flex;
+  position: relative;
+}
+
+.show-head h2 {
+  position: absolute;
+  bottom: 0px;
+  left:240px;
+}
+
+.show-head img {
+  border-radius: 50%;
+}
+
 @media(max-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr;
