@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Our best citations (<%= @flats.count %>)</h1>
+
+  <div class="container">
+    <div class="cards">
+      <% @flats.each do |flat| %>
+      <div class="white-card">
+        <%= image_tag  flat.image %>
+        <div class="text-content">
+          <h2> <%= flat.name %> </h2>
+          <p> <%= flat.address %> </p>
+        </div>
+        <div class="info-content">
+          <p> <i class="fas fa-search-dollar"></i><%= flat.price_per_night %> </p>
+          <p> <i class="fas fa-user-friends"></i><%= flat.number_of_guests %> </p>
+        </div>
+        <div class="actions">
+          <p>add</p>
+        </div>
+      </div>
+      <% end %>  
+    </div>
+  </div>
+  <hr>
+</div>
